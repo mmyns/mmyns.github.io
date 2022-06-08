@@ -6,7 +6,7 @@ description: Template for team page
 {{ content }}
 <div class="row cards mt-4">
   {% for member in site.data.team %}
-      <div class="col-md mt-1 ml-1">
+      <div class="col-md-6 mt-1 ml-1">
         <div class="card" style="">
           <img class="card-img-top" src="{{ member.image | relative_url }}" alt="Card image cap">
           <div class="card-body">
@@ -16,7 +16,7 @@ description: Template for team page
       </div>
   {% endfor %}
   {% for member in site.data.team %}
-    <div class="col-sm">
+    <div class="col-md-6">
       {{ member.description | markdownify }}
     </div>
   {% endfor %}
