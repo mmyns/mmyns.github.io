@@ -4,9 +4,19 @@ description: Template for team page
 ---
 
 {{ content }}
-
-{% for member in site.data.team %}
-  <div class="d-flex team-member">
+<div class="row cards mt-4">
+  {% for member in site.data.team %}
+      <div class="col-sm">
+        {{ member.description | markdownify }}
+      </div>
+  {% endfor %}
+  {% for member in site.data.team %}
+    <div class="col-sm">
+      {{ member.description | markdownify }}
+    </div>
+  {% endfor %}
+</div>
+  <!-- <div class="d-flex team-member">
     <div class="flex-shrink-0 me-3">
       {% if member.image %}
         <img src="{{ member.image | relative_url }}">
@@ -54,5 +64,5 @@ description: Template for team page
         {% endif %}
       </ul>
     </div>
-  </div>
+  </div> -->
 {% endfor %}
