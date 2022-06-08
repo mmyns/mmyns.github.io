@@ -6,13 +6,13 @@ description: Template for team page
 {{ content }}
 <div class="row cards mt-4">
   {% for member in site.data.team %}
-      <div class="col-lg">
-        <h5 id="{{ member.name | strip | url_encode }}">
-          {{ member.name }}
-          {% if member.role %}
-            <small class="text-muted">| {{ member.role }}</small>
-          {% endif %}
-        </h5>
+      <div class="col-lg mt-1 ml-1">
+        <div class="card" style="">
+          <img class="card-img-top" src="{{ member.image | relative_url }}" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
         {{ member.description | markdownify }}
       </div>
   {% endfor %}
