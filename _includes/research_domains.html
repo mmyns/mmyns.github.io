@@ -12,7 +12,6 @@
       <a class="stretched-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h5>
 
-
     <div class="card-text">
       {% if post.description %}
         {{ post.description | markdownify | truncatewords: 20 }}
