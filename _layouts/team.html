@@ -6,7 +6,17 @@ description: Template for team page
 {{ content }}
 <div class="row cards mt-4">
   {% for member in site.data.team %}
-      <div class="col-sm">
+      <div class="col-lg">
+        <div class="flex-shrink-0 me-3">
+          {% if member.image %}
+            <img src="{{ member.image | relative_url }}">
+          {% endif %}
+        <h5 id="{{ member.name | strip | url_encode }}">
+          {{ member.name }}
+          {% if member.role %}
+            <small class="text-muted">| {{ member.role }}</small>
+          {% endif %}
+        </h5>
         {{ member.description | markdownify }}
       </div>
   {% endfor %}
