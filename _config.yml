@@ -23,6 +23,10 @@ font_serif: true                        # Font type for page content: serif (def
 rounded_corners: true                   # Enable (default) rounded corners on boxes and buttons
 logo: /assets/theme/images/petri-dish_1f9eb.png # Logo in navbar, will be displayed with 30px height
 
+collections:
+  projects:
+    output: true
+
 # BUILD SETTINGS
 markdown: kramdown
 plugins:                                # If you build your site on gh-pages, only use these plugins: https://pages.github.com/versions/
