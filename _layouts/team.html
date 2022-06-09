@@ -15,33 +15,33 @@ description: Template for team page
           <h4 class="card-title">{{ member.name | markdownify }}</h5>
           <h5 class="card-subtitle text-muted">{{ member.role | markdownify }}</h6>
         
-          <div class="card-footer">
+          <div class="card-footer border-0">
               {% if member.orcid %}
-                <button type="button" class="btn">
+                <button type="button" class="btn border">
                   <a href="https://orcid.org/{{ member.orcid }}"><i class="ai ai-orcid"></i></a>
                 </button>
               {% endif %}
       
               {% if member.researchgate %}
-              <button type="button" class="btn">
+              <button type="button" class="btn border">
                   <a href="https://researchgate.net/profile/{{ member.researchgate }}"><i class="ai ai-researchgate"></i></a>
                 </button>
               {% endif %}
       
               {% if member.twitter %}
-              <button type="button" class="btn">
+              <button type="button" class="btn border">
                   <a href="https://twitter.com/{{ member.twitter }}"><i class="fab fa-twitter"></i></a>
                 </button>
               {% endif %}
       
               {% if member.github %}
-              <button type="button" class="btn">
+              <button type="button" class="btn border">
                   <a href="https://github.com/{{ member.github }}"><i class="fab fa-github"></i></a>
                 </button>
               {% endif %}
       
               {% if member.email %}
-              <button type="button" class="btn">
+              <button type="button" class="btn border">
                   <a href="mailto:{{ member.email }}"><i class="far fa-envelope"></i></a>
                 </button>
               {% endif %}
