@@ -140,8 +140,6 @@
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  height: 15vw;
-  object-fit: cover;
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
 }
 
