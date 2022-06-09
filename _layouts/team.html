@@ -4,10 +4,9 @@ description: Template for team page
 ---
 
 {{ content }}
-<div class="row">
+<div class="card-deck">
   {% for member in site.data.team %}
-      <div class="col-md-4">
-        <div class="card border-0 h-100">
+        <div class="card border-0">
         {% if member.image %}
           <img class="card-img-top rounded-circle" src="{{ member.image | relative_url }}" alt="Card image cap">
         {% else %}
@@ -51,7 +50,6 @@ description: Template for team page
               {% endif %}
             </ul>
           </div>
-      </div>
     </div>
   {% endfor %}
 </div>
