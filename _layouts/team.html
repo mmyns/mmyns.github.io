@@ -7,7 +7,7 @@ description: Template for team page
 <div class="row cards">
   {% for member in site.data.team %}
       <div class="col-md-4">
-          <img class="card-img-top" src="{{ member.image | relative_url }}" alt="Card image cap">
+          <img class="card-img-top rounded-circle" src="{{ member.image | relative_url }}" alt="Card image cap">
           <h5 class="card-title">{{ member.name | markdownify }}</h5>
           <h6 class="card-subtitle">{{ member.role | markdownify }}</h6>
           <div class="card-body">
