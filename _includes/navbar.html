@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main-nav">
   <div class="container">
-    {%- assign default_paths = site.posts | map: "path" -%}
+    {%- assign default_paths = site.projects | map: "path" -%}
     <a class="navbar-brand d-flex align-items-center" href="{{'/' | relative_url }}">
       {% if site.logo %}
         <img src="{{ site.logo | relative_url }}" class="me-2">
@@ -45,7 +45,7 @@
             </a>
             <div class="dropdown-menu">
               {% for item in default_paths %}
-                {%- assign my_page = site.posts | where: "path", item | first -%}
+                {%- assign my_page = site.projects | where: "path", item | first -%}
                 <a class="dropdown-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
               {% endfor %}
             </div>
