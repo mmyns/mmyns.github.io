@@ -4,10 +4,15 @@ description: Template for team page
 ---
 
 {{ content }}
-<div class="row cards">
+<div class="row">
   {% for member in site.data.team %}
       <div class="col-md-4">
+        <div class="card h-100">
+        {% if member.image %}
           <img class="card-img-top rounded-circle" src="{{ member.image | relative_url }}" alt="Card image cap">
+        {% else %}
+          <img class="card-img-top rounded-circle" src="{{ member.image | relative_url }}" alt="Card image cap">
+        {% endif %}
           <h5 class="card-title">{{ member.name | markdownify }}</h5>
           <h6 class="card-subtitle">{{ member.role | markdownify }}</h6>
           <div class="card-body">
@@ -48,6 +53,7 @@ description: Template for team page
             </ul>
           </div>
       </div>
+    </div>
   {% endfor %}
 </div>
   <!-- <div class="d-flex team-member">
