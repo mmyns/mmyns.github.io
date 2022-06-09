@@ -12,6 +12,40 @@ description: Template for team page
           <h6 class="card-subtitle">{{ member.role | markdownify }}</h6>
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+          </div>
+          <div class="card-footer">
+            <ul class="list-inline">
+              {% if member.orcid %}
+                <li class="list-inline-item">
+                  <a href="https://orcid.org/{{ member.orcid }}"><i class="ai ai-orcid"></i></a>
+                </li>
+              {% endif %}
+      
+              {% if member.researchgate %}
+                <li class="list-inline-item">
+                  <a href="https://researchgate.net/profile/{{ member.researchgate }}"><i class="ai ai-researchgate"></i></a>
+                </li>
+              {% endif %}
+      
+              {% if member.twitter %}
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/{{ member.twitter }}"><i class="fab fa-twitter"></i></a>
+                </li>
+              {% endif %}
+      
+              {% if member.github %}
+                <li class="list-inline-item">
+                  <a href="https://github.com/{{ member.github }}"><i class="fab fa-github"></i></a>
+                </li>
+              {% endif %}
+      
+              {% if member.email %}
+                <li class="list-inline-item">
+                  <a href="mailto:{{ member.email }}"><i class="far fa-envelope"></i></a>
+                </li>
+              {% endif %}
+            </ul>
           </div>
       </div>
   {% endfor %}
