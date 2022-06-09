@@ -14,10 +14,10 @@
 
 
     <div class="card-text">
-      {% if post.description %}
-        {{ post.description | markdownify | truncatewords: 20 }}
+      {% if project.description %}
+        {{ project.description | markdownify | truncatewords: 20 }}
       {% else %}
-        {{ post.excerpt | truncatewords: 20 }}
+        {{ project.excerpt | truncatewords: 20 }}
       {% endif %}
     </div>
   </div>
