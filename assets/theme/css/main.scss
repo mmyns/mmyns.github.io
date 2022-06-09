@@ -53,6 +53,6 @@ $enable-rounded: {% if site.rounded_corners != false %}true{% else %}false{% end
   @import "_header";            // Header
   @import "_content";           // Content
   @import "_toc";               // Table of content
-  @import "_card";              // Blog post card
+
   @import "_team";              // Team members
 @import "_footer";              // Footer
