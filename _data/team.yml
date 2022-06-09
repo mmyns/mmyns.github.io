@@ -12,11 +12,29 @@
   email: your.email@example.com
   boss: true
 
-- name: Turanga Leela
-  role: Captain
+- name: Whisky
+  role: Boss Doggo
   description: >
     Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
     aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
+  image: assets/theme/images/Whisky.jpg
+
+- name: Turron
+  role: Dog
+  description: >
+    Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
+    aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
+  image: assets/theme/images/Turron.png
+
+- name: Bollito
+  role: Dog
+  description: >
+    Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
+    aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
+  image: assets/theme/images/Bollito.png
+
+
+
 
 - name: Professor Hubert J. Farnsworth
   role: CEO & Owner
