@@ -1,7 +1,7 @@
-<div class="card" data-categories="{% for category in post.categories %}{{ category | downcase | strip }}|{% endfor %}">
-  <a href="{{ post.url | relative_url }}">
-    {% if post.background %}
-      <img class="card-img-top" src="{{ post.image | relative_url }}">
+<div class="card">
+  <a href="{{ project.url | relative_url }}">
+    {% if project.background %}
+      <img class="card-img-top" src="{{ project.image | relative_url }}">
     {% else %}
       <div class="card-img-top bg-secondary"></div>
     {% endif %}
@@ -22,11 +22,5 @@
     </div>
   </div>
 
-  {% if post.categories and site.archive_permalink %}
-    <div class="card-footer">
-      {% for category in post.categories %}
-        <a class="badge{% if site.rounded_corners != false %} rounded-pill{% endif %}" href="{{ site.archive_permalink | relative_url }}?category={{ category | url_encode }}">{{ category }}</a>
-      {% endfor %}
-    </div>
-  {% endif %}
+
 </div>
