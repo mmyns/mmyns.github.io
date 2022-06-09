@@ -6,7 +6,7 @@ description: Template for team page
 {{ content }}
 <div class="card-deck row">
   {% for member in site.data.team %}
-        <div class="card col-sm-2 col-md-4 border-0">
+        <div class="card col-sm-6 col-md-4 border-0">
         {% if member.image %}
           <img class="card-img-top rounded-circle" src="{{ member.image | relative_url }}" alt="Card image cap">
         {% else %}
