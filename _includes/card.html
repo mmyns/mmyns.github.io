@@ -1,9 +1,9 @@
-<div class="card homecard">
+<div class="card">
   <a href="{{ project.url | relative_url }}">
     {% if project.background %}
-      <img class="card-img-top" src="{{ project.image | relative_url }}">
+      <img class="card-img-top homecard" src="{{ project.image | relative_url }}">
     {% else %}
-      <div class="card-img-top bg-secondary"></div>
+      <div class="card-img-top bg-secondary homecard"></div>
     {% endif %}
   </a>
 
