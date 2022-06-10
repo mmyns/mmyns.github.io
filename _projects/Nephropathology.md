@@ -2,8 +2,8 @@
 title: Nephropathology
 image: "assets/theme/images/Nephro.png"
 background: "assets/theme/images/Nephro.png"
-description: Automated detection of kidney rejection
+description: Automated detection of transplant kidney rejection in biopsies
 ---
 
-There is a global shortage in donor kidneys 
+Diagnosing kidney rejection is a very time intensive procedure. 
 
