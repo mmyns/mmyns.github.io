@@ -1,6 +1,6 @@
 ---
 title: Nephropathology
-image: "assets/theme/images/Nephro.png"
+image: "/assets/theme/images/Whisky.jpg"
 background: "assets/theme/images/Nephro.png"
 description: Automated detection of kidney rejection
 ---
