@@ -8,5 +8,5 @@ description: Automated detection of kidney rejection
 There is a global shortage in donor kidneys 
 
 {:refdef: style="text-align: center;"}
-![My Image]({{ site.baseimg }}assets/theme/images/Whisky.jpg)
+![My Image](assets/theme/images/Whisky.jpg)
 {: refdef}
