@@ -1,11 +1,12 @@
 ---
-title: Nephropathology
+title: Dogs
 image: "/assets/theme/images/Whisky.jpg"
 background: "assets/theme/images/Nephro.png"
-description: Automated detection of kidney rejection
+description: Just a picture of my dog
 ---
 
-There is a global shortage in donor kidneys 
+Look at this cute dog
+
 
 {:refdef: style="text-align: center;"}
 ![My Image](/assets/theme/images/Whisky.jpg)
