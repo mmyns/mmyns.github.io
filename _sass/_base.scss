@@ -11,8 +11,13 @@ body {
   white-space: normal; // Wrap button within container
 }
 
+.homecard {
+  height: 15vw;
+}
+
 // Add padding to code blocks
 pre.highlight {
   padding: 0.25rem;
   margin-bottom: $grid-gutter-width / 2;
 }
+
