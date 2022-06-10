@@ -2,7 +2,7 @@
 layout: home
 title: Biomed 
 description: Biomedical data Analysis research lab 
-background: /assets/theme/images/chuttersnap-146799-unsplash.jpg
+background: /assets/theme/images/sinusoid.jpg
 permalink: /
 ---
 
