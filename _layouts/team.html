@@ -9,9 +9,9 @@ description: Template for team page
   {% for member in site.data.professors %}
     <div class="card mb-3 col-12 h-100" >
       <div class="row g-0">
-        <div class="col-md-4 mx-auto">
+        <div class="col-md-4">
           <a href="{{ member.leuvenlink | relative_url }}" class="stretched-link"></a>
-          <img src="{{member.image | relative_url}}" class="img-fluid rounded-start" alt="...">
+          <img src="{{member.image | relative_url}}" class="img-fluid rounded-start mx-auto" style="display: block" alt="...">
           
         </div>
         <div class="col-md-8">
