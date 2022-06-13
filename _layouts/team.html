@@ -7,8 +7,7 @@ description: Template for team page
 <h3 style="margin-top: 5px">Professors</h3>
 <div class="row">
   {% for member in site.data.professors %}
-  <div class="col-12 h-100">
-    <div class="card mb-3" >
+    <div class="card mb-3 col-12 h-100" >
       <div class="row g-0">
         <div class="col-md-4 mx-auto">
           <a href="{{ member.leuvenlink | relative_url }}">
@@ -25,7 +24,6 @@ description: Template for team page
         </div>
       </div>
     </div>
-  </div>
   {% endfor %}
 </div>
 
