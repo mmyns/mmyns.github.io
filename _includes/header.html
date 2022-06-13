@@ -1,8 +1,7 @@
 {% if page.background %}
   <header class="header bg-image" style="background-image: url('{{ page.background | relative_url }}')">
-{% else %}
-  <header>
-{% endif %}
+
+
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 position-relative mx-auto">
@@ -30,3 +29,4 @@
       </div>
     </div>
   </header>
+  {% endif %}
