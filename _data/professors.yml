@@ -13,7 +13,7 @@
 
 - name: Alexander Betrand
   role: professor # Will appear next to name
-  image: assets/theme/images/maarten.png # Can be external link
+  image: assets/theme/images/alex.jpg # Can be external link
   description: > # Can be Markdown
     Professor at biomed: filler text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   interests: Wearable EEG, Barbecue
@@ -22,4 +22,4 @@
   twitter: twitter_name
   github: github_name
   email: your.email@example.com
-  leuvenlink: https://www.esat.kuleuven.be/stadius/person.php?id=203
+  leuvenlink: https://www.esat.kuleuven.be/stadius/person.php?id=331
