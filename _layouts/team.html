@@ -4,6 +4,25 @@ description: Template for team page
 ---
 
 {{ content }}
+{% for member in site.data.professors %}
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <a href="{{ member.leuvenlink | relative_url }}">
+      <img src="member.image" class="img-fluid rounded-start" alt="...">
+      </a>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">member.name</h4>
+        <h5 class="card-subtitle text-muted">member.role</h5>
+        <p class="card-text">{{member.description | markdownify}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
 <div class="row">
   {% for member in site.data.team %}
         <div class="card col-sm-6 col-md-4 col-lg-3 border-0 h-100">
