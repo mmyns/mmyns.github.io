@@ -9,4 +9,4 @@
   twitter: twitter_name
   github: github_name
   email: your.email@example.com
-  leuvenlink: https://www.esat.kuleuven.be/stadius/person.php?id=203
+  leuvenlink: "https://www.esat.kuleuven.be/stadius/person.php?id=203"
