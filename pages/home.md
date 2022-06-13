@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Biomed 
-description: Biomedical data Analysis research lab 
+description: Biomedical Data Processing Research Lab 
 background: /assets/theme/images/sinusoid.jpg
 permalink: /
 ---
@@ -12,3 +12,4 @@ Biomed is a research lab at at KU Leuven under the department ESAT.
 
 BLA BLA BLA BLA
 BLABLA BLA BLA 
+
